@@ -1,0 +1,86 @@
+<!--
+Author: Sean Paterson
+Created on: 07-02-2021
+Latest changes: Initial Commit
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Casa del Cibo - Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <h1>Casa del Cibo</h1>
+    </header>
+    <hr />
+
+    <nav>
+      <p style="display: inline"><a href="index.html">Home</a></p>
+      <p style="display: inline"><a href="menu.html">Menu</a></p>
+      <p style="display: inline"><a href="contact-us.html">Contact Us</a></p>
+    </nav>
+    <hr />
+
+    <section>
+      <form class="" action="index.html" method="post">
+        <label for="name">Name: </label>
+        <input type="text" name="name">
+        <br />
+
+        <label for="email">Email: </label>
+        <input type="text" name="email">
+        <br />
+
+        <label for="phone">Phone</label>
+        <input type="text" name="phone">
+        <br />
+
+        <label for="inquirey">Reason for Inquiry: </label>
+        <select name="inquiry">
+          <option value="catering">Catering</option>
+          <option value="private-party">Private Party</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+
+        <label for="additionalInfo">Additional Information</label>
+        <textarea name="additionalInfo" rows="8" cols="80"></textarea>
+        <br />
+
+        <label for="isCustomer">Have you been to the restraunt: </label>
+        <fieldset name="isCustomer">
+          <input type="radio" name="readQuestionnaire" value="no">
+          <label for="no">No</label>
+          <input type="radio" name="readQuestionnaire" value="yes">
+          <label for="yes">Yes</label>
+        </fieldset>
+        <br />
+
+        <label for="bestContactDay">Best says to contact you: </label>
+        <fieldset name="bestContactDay">
+          <input type="checkbox" name="monday" value="monday">
+          <label for="monday">M</label>
+          <input type="checkbox" name="tuesday" value="tuesday">
+          <label for="tuesday">T</label>
+          <input type="checkbox" name="wednesday" value="wednesday">
+          <label for="wednesday">W</label>
+          <input type="checkbox" name="thursday" value="thursday">
+          <label for="thursday">T</label>
+          <input type="checkbox" name="friday" value="friday">
+          <label for="friday">F</label>
+        </fieldset>
+        <br />
+
+        <button type="submit" name="submit">Send Request</button>
+      </form>
+    </section>
+    <hr />
+
+    <footer>
+      <p>420 Delicious Avenue, Manchester, M1 69A</p>
+      <p>0161 123 4567</p>
+    </footer>
+  </body>
+</html>
