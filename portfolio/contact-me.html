@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Me</h1>
+    </header>
+
+    <hr />
+
+    <nav>
+      <p><a href="index.html">Home</a></p>
+    </nav>
+
+    <hr />
+
+    <section>
+      <h2>Information Request</h2>
+      <form action="submit.html" method="post">
+        <label for="firstName">First Name</label> <br />
+        <input type="text" name="firstName"> <br />
+        <label for="lastName">Last Name</label> <br />
+        <input type="text" name="lastName"> <br />
+        <label for="phoneNumber">Phone Number</label> <br />
+        <input type="text" name="phoneNumber"> <br />
+        <label for="contactTime">Best time to call:</label> <br />
+        <select class="" name="contactTime">
+          <option value="morning">Morning (8am to 12pm)</option>
+          <option value="afternoon">Afternoon (12pm to 5pm)</option>
+          <option value="evening">Evening (5pm to 8pm)</option>
+        </select> <br /> 
+        <label for="area">I am interested in (check all that apply):</label> <br />
+        <fieldset name="area">
+          <input type="checkbox" name="frontEnd" value="frontEnd" >
+          <label for="frontEnd">Front-End Web Development</label> <br />
+          <input type="checkbox" name="backEnd" value="backEnd">
+          <label for="backEnd">Back-End Web Development</label> <br />
+          <input type="checkbox" name="database" value="database">
+          <label for="database">Database Design</label> <br />
+        </fieldset>
+        <label for="readQuestionnaire">I have filled in the client questionnaire form:</label> <br />
+        <fieldset name="readQuestionnaire">
+          <input type="radio" id="yes" value="yes">
+          <label for="yes">Yes</label> <br />
+          <input type="radio" id="no" value="no">
+          <label for="no">No</label> <br />
+        </fieldset>
+        <label for="additionalInfo">Additional Information</label> <br />
+        <textarea name="additionalInfo" rows="8" cols="80"></textarea> <br />
+        <button type="submit" name="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <hr />
+      <p>&copy; 2021 Sean Paterson. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
