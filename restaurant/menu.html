@@ -8,84 +8,173 @@ Latest changes: Initial Commit
 
 <head>
   <meta charset="utf-8">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oxygen:wght@400;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/restaurantStyles.css">
+
   <title>Casa del Cibo - Menu</title>
+
+  <style media="screen">
+    section .menu-container {
+      border: 1px solid black;
+      background-color: #e97171;
+      box-shadow: 5px 5px 5px #696969;
+      padding: 15px;
+    }
+
+    h2 {
+      text-decoration: underline;
+      padding-bottom: 20px;
+      margin-top: 50px;
+    }
+
+    section .row {
+      margin: 0;
+    }
+
+    table {
+      background-color: #e97171;
+      width: 100%;
+      text-align: left;
+      border: 1px solid black;
+      box-shadow: 5px 5px 5px #696969;
+      margin-bottom: 50px;
+    }
+
+    td {
+      padding: 15px;
+    }
+
+    .alt {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  </style>
 </head>
 
 <body>
   <header>
     <h1>Casa del Cibo</h1>
   </header>
-  <hr />
 
   <nav>
-    <p style="display: inline"><a href="index.html">Home</a></p>
-    <p style="display: inline"><a href="menu.html">Menu</a></p>
-    <p style="display: inline"><a href="contact-us.html">Contact Us</a></p>
+    <div class="content">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-us.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
   </nav>
-  <hr />
 
   <section>
-    <table>
-      <tr>
-        <td>
-          <p><strong>Burger and Fries</strong></p>
-          <p>An American Classic!</p>
-          <p>Your Choice - with or without cheese</p>
-          <p>Pickle, onion, tomato, and lettuce</p>
-          <p>Served with our famous thick cut french fries</p>
-          <p>£7.95</p>
-        </td>
-        <td>
-          <p><strong>Hotdog and Chips</strong></p>
-          <p>A Summer Classic!</p>
-          <p>Your Choice - white or wheat bun</p>
-          <p>Relish, mustard, and ketchup</p>
-          <p>Served with our house-made chips</p>
-          <p>£7.95</p>
-        </td>
-        <td>
-          <p><strong>Italian Suasage and Peppers</strong></p>
-          <p>An All-Time Classic!</p>
-          <p>Your Choice - mild or spicey Coleslaw</p>
-          <p>Served with garlic mashers</p>
-          <p>£10.95</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><strong>Tenderloin Sandwich and Chips</strong></p>
-          <p>Really Hits the Spot!</p>
-          <p>Plain or Sesame Seed Bu</p>
-          <p>Pickle, onion, tomato, and lettuce</p>
-          <p>Served with our house-made chips</p>
-          <p>£8.95</p>
-        </td>
-        <td>
-          <p><strong>House Salad</strong></p>
-          <p>On the Lighter Side!</p>
-          <p>Your Choice - with or without cheese</p>
-          <p>Iceberg lettuce, tomatoes, and peppers</p>
-          <p>Thousand Island or Ranch</p>
-          <p>Dressing served with a dinner roll</p>
-          <p>£6.95</p>
-        </td>
-        <td>
-          <p><strong>Brisket Sandwich and Fries</strong></p>
-          <p>A Taste of Texas!</p>
-          <p>Smoked Brisket on Thick Cut Texas Toast</p>
-          <p>Coleslaw</p>
-          <p>Served with our famous thick cut french fries</p>
-          <p>£7.95</p>
-        </td>
-      </tr>
-    </table>
+    <div class="content">
+
+      <h2>Menu</h2>
+      <div class="menu-container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <p><strong>Burger and Fries</strong></p>
+            <ul>
+              <li>An American Classic!</li>
+              <li>Your Choice - with or without cheese</li>
+              <li>Pickle, onion, tomato, and lettuce</li>
+              <li>Served with our famous thick cut french fries</li>
+            </ul>
+            <p><strong>£7.95</strong></p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <p><strong>Hotdog and Chips</strong></p>
+            <ul>
+              <li>A Summer Classic!</li>
+              <li>Your Choice - white or wheat bun</li>
+              <li>Relish, mustard, and ketchup</li>
+              <li>Served with our house-made chips</li>
+            </ul>
+            <p><strong>£7.95</strong></p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <p><strong>Italian Suasage and Peppers</strong></p>
+            <ul>
+              <li>An All-Time Classic!</li>
+              <li>Your Choice - mild or spicey Coleslaw</li>
+              <li>Served with garlic mashers</li>
+            </ul>
+            <p><strong>£10.95</strong></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <p><strong>Tenderloin Sandwich and Chips</strong></p>
+            <ul>
+              <li>Really Hits the Spot!</li>
+              <li>Plain or Sesame Seed Bu</li>
+              <li>Pickle, onion, tomato, and lettuce</li>
+              <li>Served with our house-made chips</li>
+            </ul>
+            <p><strong>£8.95</strong></p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <p><strong>House Salad</strong></p>
+            <ul>
+              <li>On the Lighter Side!</li>
+              <li>Your Choice - with or without cheese</li>
+              <li>Iceberg lettuce, tomatoes, and peppers</li>
+              <li>Thousand Island or Ranch</li>
+              <li>Dressing served with a dinner roll</li>
+            </ul>
+            <p><strong>£6.95</strong></p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <p><strong>Brisket Sandwich and Fries</strong></p>
+            <ul>
+              <li>A Taste of Texas!</li>
+              <li>Smoked Brisket on Thick Cut Texas Toast</li>
+              <li>Coleslaw</li>
+              <li>Served with our famous thick cut french fries</li>
+            </ul>
+            <p><strong>£7.95</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Beverages</h2>
+      <table>
+        <tr>
+          <td>Root Beer</td>
+          <td>£3.00</td>
+        </tr>
+        <tr class="alt">
+          <td>Bottled Water</td>
+          <td>£1.25</td>
+        </tr>
+        <tr>
+          <td>Lemonade</td>
+          <td>£1.00</td>
+        </tr>
+        <tr class="alt">
+          <td>Iced Tea</td>
+          <td>£1.25</td>
+        </tr>
+      </table>
+
+    </div>
   </section>
-  <hr />
 
   <footer>
     <p>420 Delicious Avenue, Manchester, M1 69A</p>
     <p>0161 123 4567</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>
 
 </html>

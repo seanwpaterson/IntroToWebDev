@@ -1,0 +1,92 @@
+/*
+Author: Sean Paterson
+Date Created: 09-02-2021
+Last Edited 09-02-2021
+Latest Changes: Initial Commit
+*/
+
+body {
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+  color: #e97171;
+}
+
+h2 {
+  font-family: 'PT Serif', serif;
+}
+
+header {
+  background-color: #810000;
+  padding: 50px 0 25px 0;
+}
+
+nav {
+  background-color: #810000;
+}
+
+section {
+    background-color: #f5efef;
+    padding: 25px 0;
+}
+
+article {
+  padding: 25px 0;
+}
+
+footer {
+  background-color: #ffcb8e;
+  padding: 25px 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+strong {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+}
+
+hr {
+  margin: 0 25%;
+  width: 50%;
+}
+
+.content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: #f5efef;
+}
+
+nav a:hover {
+  color: #f5efef;
+}
+
+.external-link {
+  color: #810000;
+}
+
+.external-link:hover {
+  color: #810000;
+  font-weight: 700;
+}
+
+.external-link:visited {
+  color: #e97171;
+}
+
+.external-link:active {
+  text-decoration: none;
+}
