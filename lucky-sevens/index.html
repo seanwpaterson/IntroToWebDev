@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Oleo+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Lucky Sevens</title>
+</head>
+
+<body>
+  <header>
+    <h1>♠️ ♥️ Lucky Sevens ♦️ ♣️</h1>
+  </header>
+
+  <div class="set-up">
+    <label for="starting-bet">Starting Bet:</label>
+    <input type="text" id="starting-bet" name="starting-bet">
+    <br />
+    <button type="button" onclick="play()" name="play">Play</button>
+  </div>
+
+
+  <div id="results-table">
+    <h2>Results</h2>
+    <table>
+      <tr class="alt">
+        <td>Starting Bet</td>
+        <td id="starting"></td>
+      </tr>
+      <tr>
+        <td>Total Rolls Before Going Broke</td>
+        <td id="count"></td>
+      </tr>
+      <tr class="alt">
+        <td>Highest Amount Won</td>
+        <td id="highest-amount"></td>
+      </tr>
+      <tr>
+        <td>Roll Count At Highest Amount Won</td>
+        <td id="highest-count"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+<script src="scripts/index.js" charset="utf-8"></script>
+
+</html>
