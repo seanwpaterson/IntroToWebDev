@@ -9,10 +9,19 @@ Latest changes: Initial Commit
 <head>
   <meta charset="utf-8">
 
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oxygen:wght@400;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/restaurantStyles.css">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <!-- external stylesheet -->
+  <link rel="stylesheet" href="styles/restaurantStyle.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
 
   <title>Casa del Cibo - Contact Us</title>
 </head>
@@ -29,25 +38,29 @@ Latest changes: Initial Commit
     <h1>Casa del Cibo</h1>
   </header>
 
-  <nav>
-    <div class="content">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="menu.html">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="contact-us.html">Contact Us</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid content">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-home fa-2x"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact-us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <section>
     <div class="content">
-      <form class="" action="index.html" method="post">
+      <form class="" action="" method="post">
         <div class="form-floating mb-3">
           <input type="text" class="form-control" name="name" placeholder="name" autocomplete="off" required>
           <label for="name">Name</label>
@@ -78,7 +91,7 @@ Latest changes: Initial Commit
           <label for="additionalInfo">Additional Information</label>
         </div>
         <br />
-        
+
         <fieldset class="row mb-3" name="isCustomer">
           <legend class="col-form-label col-sm-4 pt-0">Have you been to the restraunt</legend>
           <div class="col-sm-8">
@@ -122,8 +135,22 @@ Latest changes: Initial Commit
         </fieldset>
         <br />
 
-        <button class="btn btn-primary" type="button" name="submit">Send Request</button>
+        <button class="btn btn-primary" type="button" onclick="validate();" name="submit">Send Request</button>
+        <button class="btn btn-outline-danger" type="button" onclick="formReset();" name="button">Reset</button>
       </form>
+
+      <div id="valid">
+        <h2>The form data was valid. Ta muchly.</h2>
+      </div>
+      <div id="invalid">
+        <h2>The following fields were invalid:</h2>
+        <ul>
+          <li>Name</li>
+          <li>Email</li>
+          <li>Phone Number</li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
@@ -132,6 +159,7 @@ Latest changes: Initial Commit
     <p>0161 123 4567</p>
   </footer>
 
+  <script src="scripts/contactUs.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>

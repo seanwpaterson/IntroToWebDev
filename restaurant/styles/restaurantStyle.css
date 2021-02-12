@@ -4,7 +4,6 @@ Date Created: 09-02-2021
 Last Edited 09-02-2021
 Latest Changes: Initial Commit
 */
-
 body {
   text-align: center;
   font-family: 'Oxygen', sans-serif;
@@ -32,8 +31,8 @@ nav {
 }
 
 section {
-    background-color: #f5efef;
-    padding: 25px 0;
+  background-color: #f5efef;
+  padding: 25px 0;
 }
 
 article {
@@ -66,14 +65,6 @@ hr {
   margin: 0 auto;
 }
 
-.nav-link {
-  color: #f5efef;
-}
-
-nav a:hover {
-  color: #f5efef;
-}
-
 .external-link {
   color: #810000;
 }
@@ -89,4 +80,37 @@ nav a:hover {
 
 .external-link:active {
   text-decoration: none;
+}
+
+noscript div {
+  background-color: orange;
+  font-weight: bold;
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  padding: 30px;
+  margin: 10px auto 0;
+  background-color: #e97171;
+  border-radius: 30px;
+}
+
+#valid {
+  color: green;
+  text-align: left;
+  padding: 20px;
+  display: none;
+}
+
+#invalid {
+  color: red;
+  text-align: left;
+  padding: 20px;
+  display: none;
+}
+
+#invalid ul {
+  margin: 0 0 0 30px;
 }
